@@ -1,0 +1,72 @@
+# ============================================================
+# Number Guessing Game
+# ============================================================
+#
+# Description:
+"""
+A command-line Number Guessing Game where the player guesses a randomly generated number between 1 and 10. 
+The game # provides hints, tracks the number of attempts, and starts a new round after each successful guess until the player exits.
+"""
+# Author: Kushagra-des
+# ============================================================
+
+import random
+
+
+def run_game():
+    """Runs the Number Guessing Game."""
+
+    print("=" * 55)
+    print("\t  WELCOME TO THE NUMBER GUESSING GAME")
+    print("=" * 55)
+    print("Rules:")
+    print("- Guess a number between 1 and 10.")
+    print("- Type 'exit' at any time to quit.\n")
+
+    round_number = 1
+
+    while True:
+        print(f"\n---------- Round {round_number} ----------")
+
+        secret_number = random.randint(1, 10)
+        attempts = 0
+
+        while True:
+            user_input = input("Enter your guess: ").strip()
+
+            # Exit the game
+            if user_input.lower() == "exit":
+                print("\nThank you for playing. Goodbye!")
+                return
+
+            try:
+                guess = int(user_input)
+
+                # Validate the input range
+                if not 1 <= guess <= 10:
+                    print("Please enter a number between 1 and 10.")
+                    continue
+
+                attempts += 1
+
+                if guess == secret_number:
+                    print("\nCongratulations!")
+                    print(f"You guessed the correct number: {secret_number}")
+                    print(f"Attempts: {attempts}")
+                    print("Starting a new round...\n")
+
+                    round_number += 1
+                    break
+
+                elif guess < secret_number:
+                    print("Too Low! Try again.")
+
+                else:
+                    print("Too High! Try again.")
+
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
+
+if __name__ == "__main__":
+    run_game()
