@@ -8,8 +8,6 @@
 |----------|-------------|
 | Number Guessing Game | Guess a randomly generated number. |
 | Rock Paper Scissors | Play Rock, Paper, Scissors against the computer. |
-| Calculator | Basic arithmetic calculator. |
-| Password Generator | Generate secure random passwords. |
 
 ## Technologies Used
 - Python
