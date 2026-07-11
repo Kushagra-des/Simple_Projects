@@ -170,13 +170,6 @@ Install dependencies:
 ```bash
 pip install requests
 ```
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
 ## Author
