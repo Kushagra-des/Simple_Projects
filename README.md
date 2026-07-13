@@ -10,6 +10,7 @@
 | Rock Paper Scissors | Play Rock, Paper, Scissors against the computer. |
 | Simple Stopwatch | Measuring Elapsed Time with Start, Stop, and Reset Controls.  |
 | Currency Converter | Real-Time Currency Conversion between supported currencies. |
+| Age Calculator | Calculates a Person's exact Age based on their Date of Birth. |
 
 ## Technologies Used
 - Python
