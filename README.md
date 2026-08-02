@@ -11,6 +11,7 @@
 | Simple Stopwatch | Measuring Elapsed Time with Start, Stop, and Reset Controls.  |
 | Currency Converter | Real-Time Currency Conversion between supported currencies. |
 | Age Calculator | Calculates a Person's exact Age based on their Date of Birth. |
+| File Splitter Into Chunks | Splits large CSV or TXT files into Multiple Smaller Files |
 
 ## Technologies Used
 - Python
