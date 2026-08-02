@@ -45,7 +45,9 @@ class Split_Files:
             output_file = f"{self.directory}/split_file{self.file_number}{self.file_extension}"
             split_frame.to_csv(output_file, header=False, index=False)
 
-if __name__ == '__main__':
-    file, split_number = sys.argv[1], sys.argv[2]
+if __name__ == "__main__":
+    file = input("Enter CSV/TXT file path: ")
+    split_number = int(input("Enter number of rows per split: "))
+
     sp = Split_Files(file, split_number)
     sp.split_data()
