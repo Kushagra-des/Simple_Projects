@@ -1,4 +1,4 @@
-# File Splitter Utility using Python
+# File Splitter Into Chunks Utility using Python
 
 ## Description
 
